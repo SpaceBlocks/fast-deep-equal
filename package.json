@@ -1,10 +1,10 @@
 {
   "name": "fast-deep-equal",
-  "version": "3.0.0-beta.2",
+  "version": "3.1.1",
   "description": "Fast deep equal",
   "main": "index.js",
   "scripts": {
-    "eslint": "eslint *.js benchmark spec",
+    "eslint": "eslint *.js benchmark/*.js spec/*.js",
     "build": "node build",
     "benchmark": "npm i && npm run build && cd ./benchmark && npm i && node ./",
     "test-spec": "mocha spec/*.spec.js -R spec",
@@ -35,6 +35,9 @@
     "mocha": "^3.4.2",
     "nyc": "^11.0.2",
     "pre-commit": "^1.2.2",
+    "react": "^16.12.0",
+    "react-test-renderer": "^16.12.0",
+    "sinon": "^7.5.0",
     "typescript": "^2.6.1"
   },
   "nyc": {
@@ -50,6 +53,8 @@
   "files": [
     "index.js",
     "index.d.ts",
+    "react.js",
+    "react.d.ts",
     "es6/"
   ],
   "types": "index.d.ts"
